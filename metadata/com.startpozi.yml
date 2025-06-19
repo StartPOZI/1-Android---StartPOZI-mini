@@ -1,0 +1,23 @@
+Categories:
+  - Интернет
+  - Поиск
+License: Apache-2.0
+SourceCode: https://github.com/StartPOZI/app
+IssueTracker: https://github.com/StartPOZI/app/issues
+WebSite: https://startpozi.netlify.app/
+Donate: https://startpozi.netlify.app/donate
+
+Builds:
+  - versionName: "1.0"
+    versionCode: 100
+    commit: v1.0
+    gradle:
+      - yes
+    output: app/release/app-release.apk
+    scandelete:
+      - .gradle
+      - build
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0
